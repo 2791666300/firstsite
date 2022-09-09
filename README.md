@@ -1,2 +1,3 @@
-#
-阅读
+采用前后端分离的形式，
+backend node express mongoDB mongoose
+frontend React react-router-dom Routers ........
