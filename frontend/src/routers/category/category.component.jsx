@@ -5,7 +5,7 @@ import { CategoriesContext } from "../../contexts/categories.context";
 
 import ProductCard from "../../components/product-card/product-card.component";
 
-import "./category.styles.scss";
+import { CategoryTitle, CateGoryContainer } from "./category.styles";
 
 const Category = () => {
   /* useParams可以获取本路径里面的参数 也就是 /shop/arg    arg就是参数 */
@@ -19,13 +19,13 @@ const Category = () => {
 
   return (
     <Fragment>
-      <h2 className="category-title">{category.toUpperCase()}</h2>
-      <div className="category-container">
+      <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
+      <CateGoryContainer>
         {products &&
           products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-      </div>
+      </CateGoryContainer>
     </Fragment>
   );
 };

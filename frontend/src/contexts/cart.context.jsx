@@ -54,8 +54,6 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
 const clearCartItem = (cartItems, cartItemToClear) =>
   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
 
-  
-
 export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);

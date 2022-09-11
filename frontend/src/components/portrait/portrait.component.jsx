@@ -1,5 +1,5 @@
-import "./portrait.styles.scss";
+import { PortraitPhoto } from "./portrait.styles";
 
 export const Portrait = (photo) => {
-  return <img src='/portrait-img/user-2.jpg' alt="portrait" className="portrait__photo" />;
+  return <PortraitPhoto src="/portrait-img/user-2.jpg" alt="portrait" />;
 };

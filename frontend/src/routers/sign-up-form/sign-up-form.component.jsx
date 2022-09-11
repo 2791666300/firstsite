@@ -7,9 +7,7 @@ import FormInput from "../../components/form-input/form-input.component";
 import Button from "../../components/button/button-component";
 import { UserContext } from "../../contexts/user.context";
 
-import "./sign-up-form.styles.scss";
-
-
+import './sign-up-form.styles.scss'
 // 作为表单的默认字段 作为状态的初始值
 const defaultFormFields = {
   displayName: "",
@@ -43,15 +41,14 @@ const SignUpForm = () => {
       }
     });
     const user = await SignUp(ojb);
-    console.log(user)
-    setCurrentUser(user)
+    console.log(user);
+    setCurrentUser(user);
     setFormFields(defaultFormFields);
   };
   return (
-    <Fragment>
       <main className="main">
         <div className="signup-form">
-          <h2 className="heading-secondary">请使用您的电子邮件和密码注册</h2>
+          <h2 >请使用您的电子邮件和密码注册</h2>
 
           <form className="form form--signup" onSubmit={handleSubmit}>
             <FormInput
@@ -97,11 +94,12 @@ const SignUpForm = () => {
               value={passwordConfirm}
               onChange={handleChange}
             />
-            <Button type='submit' id='button-signup'>Sign Up</Button>
+            <Button type="submit" id="button-signup">
+              Sign Up
+            </Button>
           </form>
         </div>
       </main>
-    </Fragment>
   );
 };
 

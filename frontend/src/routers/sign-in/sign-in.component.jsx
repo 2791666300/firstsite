@@ -46,7 +46,6 @@ const SignIn = () => {
   };
 
   return (
-    <Fragment>
       <main className="main">
         <div className="login-form">
           <h2 className="heading-secondary">登录到您的帐户</h2>
@@ -87,7 +86,6 @@ const SignIn = () => {
           </form>
         </div>
       </main>
-    </Fragment>
   );
 };
 
